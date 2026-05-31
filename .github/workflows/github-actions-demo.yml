@@ -15,5 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "🍏 This job's repository is ${{ job.workflow_repository }}."
+      - run: echo " this job's status is ${{  job.status  }} ."
 
